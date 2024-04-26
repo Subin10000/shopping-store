@@ -24,33 +24,128 @@
     <nav>
         <ul class="main-nav">
             <li class="main-category">
-                <a href="#" tabindex="0">Men</a>
+                <a href="#" tabindex="0">Root</a>
                 <ul class="sub-categories">
-                    <li><a href="#">Tops</a></li>
-                    <li><a href="#">Bottoms</a></li>
-                    <li><a href="#">Shorts</a></li>
-                    <li><a href="#">Swimwear</a></li>
-                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
                 </ul>
             </li>
             <li class="main-category">
-                <a href="#">Women</a>
+                <a href="#">Fruit</a>
                 <ul class="sub-categories">
-                    <li><a href="#">Tops</a></li>
-                    <li><a href="#">Dresses</a></li>
-                    <li><a href="#">Skirts</a></li>
-                    <li><a href="#">Shorts</a></li>
-                    <li><a href="#">Swimwear</a></li>
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
                 </ul>
             </li>
             <li class="main-category">
-                <a href="#">Jewelry</a>
+                <a href="#">Allium</a>
+                <ul class="sub-categories">
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
+                </ul>
             </li>
             <li class="main-category">
-                <a href="#">Electronics</a>
+                <a href="#">Spice</a>
+                <ul class="sub-categories">
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
+                </ul>
+            </li>
+            <li class="main-category">
+                <a href="#">Pod</a>
+                <ul class="sub-categories">
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
+                </ul>
+            </li>
+            <li class="main-category">
+                <a href="#">Vegetable</a>
+                <ul class="sub-categories">
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
+                </ul>
+            </li>
+            <li class="main-category">
+                <a href="#">Nightshade</a>
+                <ul class="sub-categories">
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
+                </ul>
+            </li>
+            <li class="main-category">
+                <a href="#">Gourd</a>
+                <ul class="sub-categories">
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
+                </ul>
+            </li>
+            <li class="main-category">
+                <a href="#">Legume</a>
+                <ul class="sub-categories">
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
+                </ul>
+            </li>
+            <li class="main-category">
+                <a href="#">Squash</a>
+                <ul class="sub-categories">
+                    <li><a href="#">Vegetable</a></li>
+                    <li><a href="#">Nightshade</a></li>
+                    <li><a href="#">Bulb</a></li>
+                    <li><a href="#">Spice</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Gourd</a></li>
+                    <li><a href="#">Squash</a></li>
+                </ul>
             </li>
         </ul>
     </nav>
+
 
 
     <form action="javascript:void(0);" method="GET">
@@ -164,10 +259,10 @@
 
 
             $('.cart-link').click(function(event) {
-        event.preventDefault();
-        // Open new window page
-        window.open('cart.php', '_blank');
-    });
+                event.preventDefault();
+                // Open new window page
+                window.open('cart.php', '_blank');
+            });
 
         });
     </script>
