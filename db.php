@@ -14,33 +14,33 @@ if ($conn->connect_error) {
 $sql = "CREATE TABLE IF NOT EXISTS products (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    category ENUM('men', 'women', 'children') NOT NULL,
-    subcategory ENUM('Jackets', 'Sweaters', 'Bottoms', 'Dresses', 'Accessories', 'Tops', 'Skirts', 'Shorts', 'Swimwear', 'Pants') NOT NULL,
+   category ENUM('Root', 'Fruit', 'Allium', 'Spice', 'Pod', 'Fruit Vegetable', 'Nightshade', 'Gourd', 'Legume', 'Squash') NOT NULL,
+    subcategory ENUM('Root Vegetable', 'Nightshade', 'Bulb', 'Root Spice', 'Fruit Vegetable', 'Legume', 'Gourd', 'Squash') NOT NULL,
     quantity INT(6) NOT NULL,
     color VARCHAR(50) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
     image VARCHAR(255) NOT NULL
 )";
-
 if ($conn->query($sql) === TRUE) {
     echo "Table 'products' updated successfully<br>";
 } else {
     echo "Error updating table: " . $conn->error;
 }
 
+
 $products = [
-    ['Combo', 'men', 'Jackets', 25, 'Black', 120.00, 'images/combo.jpg'],
-    ['Dress', 'men', 'Jackets', 15, 'Brown', 150.00, 'images/dress.jpg'],
-    ['Gown', 'women', 'Sweaters', 30, 'Red', 45.00, 'images/gown.jpg'],
-    ['Green Dress', 'women', 'Dresses', 20, 'Blue', 80.00, 'images/greenDress.jpg'],
-    ['Gym Wear', 'men', 'Accessories', 50, 'Black', 200.00, 'images/gymWear.jpg'],
-    ['One Piece', 'women', 'Bottoms', 40, 'White', 90.00, 'images/onePiece.jpg'],
-    ['Pink Dress', 'women', 'Skirts', 34, 'Blue', 35.00, 'images/pinkDress.jpg'],
-    ['Shirt', 'men', 'Shorts', 22, 'Green', 29.99, 'images/shirt.jpg'],
-    ['Shirts', 'women', 'Swimwear', 19, 'Pink', 25.00, 'images/shirts.jpg'],
-    ['Shoes', 'men', 'Pants', 18, 'Grey', 45.00, 'images/shoes.jpg'],
-    ['Sweater', 'children', 'Accessories', 50, 'Purple', 30.00, 'images/sweater.jpg'],
-    ['T-Shirt', 'children', 'Accessories', 30, 'Yellow', 15.00, 'images/tShirt.jpg']
+    ['Potato', 'Root', 'Root Vegetable', 100, 'Brown', 2.50, 'images/potato.jpg'],
+    ['Tomato', 'Fruit', 'Nightshade', 15, 'Red', 150.00, 'images/tomato.jpg'],
+    ['Pumpkin', 'Fruit', 'Squash', 30, 'Orange', 45.00, 'images/pumpkin.jpg'],
+    ['Garlic', 'Allium', 'Bulb', 60, 'White', 0.50, 'images/garlic.jpg'],
+    ['Ginger', 'Spice', 'Root Spice', 50, 'Beige', 200.00, 'images/ginger.jpg'],
+    ['Carrot', 'Root', 'Root Vegetable', 150, 'Orange', 3.00, 'images/carrots.jpg'],
+    ['Okra', 'Pod', 'Fruit Vegetable', 34, 'Green', 35.00, 'images/okra.jpg'],
+    ['Capsicum', 'Fruit', 'Nightshade', 22, 'Green', 29.99, 'images/capsicum.jpg'],
+    ['Cucumber', 'Fruit', 'Gourd', 75, 'Green', 1.20, 'images/cucumber.jpg'],
+    ['Beans', 'Pod', 'Legume', 18, 'Green', 45.00, 'images/beans.jpg'],
+    ['Zucchini', 'Fruit', 'Squash', 85, 'Green', 0.95, 'images/zucchini.jpg'],
+    ['Onion', 'Allium', 'Bulb', 110, 'Yellow', 0.30, 'images/onion.jpg']
 ];
 
 foreach ($products as $product) {
