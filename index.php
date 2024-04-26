@@ -175,18 +175,17 @@
                 fetchAndDisplayProducts('', subcategory);
             });
             $('#search-button').click(function() {
-                var query = $('#search-input').val();
-                fetchAndDisplayProducts(query);
-            });
-
-
-            function fetchAndDisplayProducts(category = '', subcategory = '') {
+            var query = $('#search-input').val();
+            fetchAndDisplayProducts('', '', query);
+});
+            function fetchAndDisplayProducts(category = '', subcategory = '', query = '') {
                 $.ajax({
                     url: 'fetch_products.php',
                     method: 'GET',
                     data: {
                         category: category,
-                        subcategory: subcategory
+                        subcategory: subcategory,
+                        query :  query
                     },
                     dataType: 'json',
                     success: function(response) {

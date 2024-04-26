@@ -18,21 +18,24 @@ $conditions = [];
 $params = [];
 $types = '';
 
-// Category filtering
 if (!empty($category)) {
     $conditions[] = "category LIKE ?";
     $params[] = "%$category%";
     $types .= 's';
 }
 
-// Subcategory filtering
 if (!empty($subcategory)) {
     $conditions[] = "subcategory LIKE ?";
     $params[] = "%$subcategory%";
     $types .= 's';
 }
 
-// Search functionality
+if (!empty($searchQuery)) {
+    $conditions[] = "name LIKE ?";
+    $params[] = "%$searchQuery%";
+    $types .= 's';
+}
+
 if (!empty($searchQuery)) {
     $conditions[] = "(name LIKE ? OR category LIKE ? OR subcategory LIKE ?)";
     $params[] = "%$searchQuery%";

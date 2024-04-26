@@ -174,12 +174,10 @@
                     },
                     error: function(xhr, status, error) {
                         console.error('Error clearing cart:', error);
+                        console.error('Response text:', xhr.responseText);
                     }
                 });
             });
-
-
-
         });
     </script>
 </body>

@@ -29,6 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $response = array("success" => false, "message" => "Error clearing cart");
     }
     $stmt->close();
+
+    header('Content-Type: application/json');
     echo json_encode($response);
 }
 
