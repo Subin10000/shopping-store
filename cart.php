@@ -100,10 +100,14 @@
                 var row = $(this).closest('tr');
                 var quantityCell = row.find('td:nth-child(3)');
                 var quantity = parseInt(quantityCell.text());
-                if (quantity > 1) {
+                if (quantity > 0) {
                     quantityCell.text(quantity - 1);
                     updateTotalPrice();
                     updateQuantityInDatabase(row, quantity - 1);
+                    if (parseInt(quantityCell.text()) === 0) {
+                        row.remove();
+                        updateTotalPrice();
+                    }
                 }
             });
 
@@ -154,11 +158,16 @@
             }
 
             $('.checkout-btn').click(function(event) {
-                event.preventDefault(); // Prevent the default form submission
+                event.preventDefault();
+                if ($('.cart-items tbody tr').length === 0) {
+                    alert('Your cart is empty. Please add items before checking out.');
+                    return;
+                }
                 var itemNames = getCartItemNames();
                 var itemNamesQueryParam = 'itemNames=' + encodeURIComponent(itemNames.join(','));
                 window.location.href = 'delivery_details.php?' + itemNamesQueryParam;
             });
+
 
 
             $('#clear-cart-btn').click(function() {

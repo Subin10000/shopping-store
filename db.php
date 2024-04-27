@@ -14,8 +14,8 @@ if ($conn->connect_error) {
 $sql = "CREATE TABLE IF NOT EXISTS products (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    category ENUM('Root', 'Fruit', 'Allium', 'Spice', 'Pod', 'Vegetable', 'Nightshade', 'Gourd', 'Legume', 'Squash') NOT NULL,
-    subcategory ENUM('Vegetable', 'Nightshade', 'Bulb', 'Spice', 'Legume', 'Gourd', 'Squash') NOT NULL,
+    category VARCHAR(255) NOT NULL,
+    subcategory VARCHAR(255) NOT NULL,
     quantity INT(6) NOT NULL,
     color VARCHAR(50) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
@@ -44,18 +44,18 @@ if ($conn->query($sql) === TRUE) {
 
 
 $products = [
-    ['Potato', 'Root', 'Vegetable', 100, 'Brown', 2.50, 5, 'images/potato.jpg'],
-    ['Tomato', 'Fruit', 'Nightshade', 15, 'Red', 150.00, 3, 'images/tomato.jpg'],
-    ['Pumpkin', 'Fruit', 'Squash', 30, 'Orange', 45.00, 7, 'images/pumpkin.jpg'],
-    ['Garlic', 'Allium', 'Bulb', 60, 'White', 0.50, 2, 'images/garlic.jpg'],
-    ['Ginger', 'Spice', 'Spice', 50, 'Beige', 200.00, 4, 'images/ginger.jpg'],
-    ['Carrot', 'Root', 'Vegetable', 150, 'Orange', 3.00, 6, 'images/carrots.jpg'],
-    ['Okra', 'Pod', 'Vegetable', 34, 'Green', 35.00, 8, 'images/okra.jpg'],
-    ['Capsicum', 'Fruit', 'Nightshade', 22, 'Green', 29.99, 9, 'images/capsicum.jpg'],
-    ['Cucumber', 'Fruit', 'Gourd', 75, 'Green', 1.20, 1, 'images/cucumber.jpg'],
-    ['Beans', 'Pod', 'Legume', 18, 'Green', 45.00, 10, 'images/beans.jpg'],
-    ['Zucchini', 'Fruit', 'Squash', 85, 'Green', 0.95, 12, 'images/zucchini.jpg'],
-    ['Onion', 'Allium', 'Bulb', 110, 'Yellow', 0.30, 11, 'images/onion.jpg']
+    ['Potato', 'Root Vegetables', 'Potato', 100, 'Brown', 2.50, 5, 'images/potato.jpg'],
+    ['Tomato', 'Fruits', 'Tomato', 15, 'Red', 150.00, 3, 'images/tomato.jpg'],
+    ['Pumpkin', 'Fruits', 'Pumpkin', 30, 'Orange', 45.00, 7, 'images/pumpkin.jpg'],
+    ['Garlic', 'Allium Vegetables', 'Garlic', 60, 'White', 0.50, 2, 'images/garlic.jpg'],
+    ['Ginger', 'Spices', 'Ginger', 50, 'Beige', 200.00, 4, 'images/ginger.jpg'],
+    ['Carrot', 'Root Vegetables', 'Carrot', 150, 'Orange', 3.00, 6, 'images/carrots.jpg'],
+    ['Okra', 'Pod', 'Okra', 34, 'Green', 35.00, 8, 'images/okra.jpg'], // Adjusted 'subcategory' to 'Vegetable'
+    ['Capsicum', 'Fruits', 'Capsicum', 22, 'Green', 29.99, 9, 'images/capsicum.jpg'],
+    ['Cucumber', 'Fruits', 'Cucumber', 75, 'Green', 1.20, 1, 'images/cucumber.jpg'],
+    ['Beans', 'Pod', 'Beans', 18, 'Green', 45.00, 10, 'images/beans.jpg'],
+    ['Zucchini', 'Fruits', 'Zucchini', 85, 'Green', 0.95, 12, 'images/zucchini.jpg'],
+    ['Onion', 'Allium Vegetables', 'Onion', 110, 'Yellow', 0.30, 11, 'images/onion.jpg']
 ];
 
 try {

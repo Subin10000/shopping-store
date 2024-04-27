@@ -16,137 +16,51 @@
         <h1 class="brand-name">Fashions Beyond</h1>
         <div class="cart">
             <a class="cart-link"><i class="fas fa-shopping-cart"></i></a>
-            (<p class="cart-count">0</p>)
+            <p class="cart-count">0</p>
         </div>
     </header>
 
 
     <nav>
-        <ul class="main-nav">
-            <li class="main-category">
-                <a href="#" tabindex="0">Root</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Fruit</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Allium</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Spice</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Pod</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Vegetable</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Nightshade</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Gourd</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Legume</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-            <li class="main-category">
-                <a href="#">Squash</a>
-                <ul class="sub-categories">
-                    <li><a href="#">Vegetable</a></li>
-                    <li><a href="#">Nightshade</a></li>
-                    <li><a href="#">Bulb</a></li>
-                    <li><a href="#">Spice</a></li>
-                    <li><a href="#">Legume</a></li>
-                    <li><a href="#">Gourd</a></li>
-                    <li><a href="#">Squash</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-
+    <ul class="main-nav">
+        <li class="main-category">
+            <a href="#" tabindex="0">Root Vegetables</a>
+            <ul class="sub-categories">
+                <li><a href="#">Carrot</a></li>
+                <li><a href="#">Potato</a></li>
+                <li><a href="#">Beetroot</a></li>
+                <li><a href="#">Okra</a></li>
+            </ul>
+        </li>
+        <li class="main-category">
+            <a href="#">Fruits</a>
+            <ul class="sub-categories">
+                <li><a href="#">Tomato</a></li>
+                <li><a href="#">Bell Pepper</a></li>
+                <li><a href="#">Pumpkin</a></li>
+                <li><a href="#">Zucchini</a></li>
+                <li><a href="#">Cucumber</a></li>
+                <li><a href="#">Capsicum</a></li>
+            </ul>
+        </li>
+        <li class="main-category">
+            <a href="#">Allium Vegetables</a>
+            <ul class="sub-categories">
+                <li><a href="#">Onion</a></li>
+                <li><a href="#">Garlic</a></li>
+                <li><a href="#">Ginger</a></li>
+            </ul>
+        </li>
+        <li class="main-category">
+            <a href="#">Legumes</a>
+            <ul class="sub-categories">
+                <li><a href="#">Green Beans</a></li>
+                <li><a href="#">Lentils</a></li>
+                <li><a href="#">Beans</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
 
     <form action="javascript:void(0);" method="GET">
         <div class="search-container">
@@ -259,7 +173,6 @@
 
             $('.cart-link').click(function(event) {
                 event.preventDefault();
-                // Open new window page
                 window.open('cart.php', '_blank');
             });
 
